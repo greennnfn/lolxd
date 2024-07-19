@@ -29,7 +29,7 @@ _G.configuration = {
         unjail = true, -- automatically unjails the account
     },
     serverhop = {
-        switch = true, -- force toggle for serverhopping
+        switch = false, -- force toggle for serverhopping
         cashthreshold = false, -- cash threshold (serverhops if it doesnt reach this within a hour of farming) || set to false if you want this disabled
         onnoatms = false, -- leaves when there are no more atms to farm (shoe and hospital become ineffective)
         onknocked = false, -- leaves if the account gets knocked
