@@ -1,1 +1,41 @@
-brooooo
+script_key="eWVnOaOSEPXCjZYMPHWpYbFRcbJnhWmy";
+
+-----------------------------------------------------------------------------
+
+getgenv().FostersSettings = {
+    ["SmallUI"] = true,                 -- Decrase the size of the UI
+    ["WebChanges"] = true,              -- Recommended, will make your emulator experience more web Roblox like. (ex. clicking "/" will start chatting)
+    ["Alts"] = {                        -- Put your alt ids here, you do NOT need to execute the script on the alts.
+            4200022296, 
+             4200023845, 
+             712198816, 
+             1938152156, 
+             4259000864,
+             4259002128,
+             4259003647,
+             4259006726,
+             3578281336,
+             4107895683,
+             4112050027,
+             4112059862,
+             4112061909,
+             4200019219,
+             4200020193,
+    },
+    
+    -- Keep in mind every message is filtered by Roblox, {buyer} will turn into the buyers displayname.
+    -- Leaving these messages on default is highly recommended.
+    
+    ["Messages"] = {
+        ["Buyer Goal Finished"] = "{buyer} Thank you, leave the game and make sure to vouch!",
+        ["Extra Cash Pickup"] = "{buyer} Stop picking up cash or you will be kicked!",
+        ["Auto Finished Kick Warning"] = "{buyer} Please leave the game or you will be kicked!",
+        ["No Goal Set Pickup Warning"] = "{buyer} Please wait a moment before picking up cash!",
+        ["Shout on set goal"] = "{buyer} Start picking up your cash!"
+    }
+    
+}
+
+-----------------------------------------------------------------------------
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cef2dea14de16d7a12c607d7825d3c88.lua"))()
