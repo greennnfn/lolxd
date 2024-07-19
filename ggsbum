@@ -1,65 +1,12 @@
-script_key="cimMBbkZHOOpcWetoKFZbFJbNCIYVFPH"
-
-_G.configuration = {
-    host = { "TR4PPTR4Y"
-
+script_key="tahFfjodKztRjfjffMfZtMVBjaFkxcFR";
+getgenv().config = {
+    mode = 1, -- 1 is super punch / box, 2 is normal punch
+    fps = 30,
+    checkPlayersNearby = false,
+    gui = true, -- will display gui with earned cash
+    webhook = {
+        url = "https://discord.com/api/webhooks/1261529828432023593/X5QTMxi5IxwNgsGSA1pY8n8nQQe6jptts7VWryVuybPfWSDeXOtN_bR-KrLXQ3ypCKAw", -- webhookurl
+        delay = "30m", -- every 30 minutes
     },
-    prefix = "/", -- prefix for commands
-    framelimit = 8, -- frame limit
-    ui = true, -- places a ui on the screen displaying the accounts cash
-    setups = {
-        ['bank'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/bank',
-        ['club'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/club',
-        ['bank2'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/bank2',
-        ['train'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/train',
-    },
-    accounts = {
-        ids = {
-       4200022296, 
-       4200023845, 
-       712198816, 
-       1938152156, 
-       4259000864,
-       4259002128,
-       4259003647,
-       4259006726,
-       3578281336,
-       4107895683,
-       4112050027,
-       4112059862,
-       4112061909,
-       4200019219,
-       4200020193,
-           },
-        fillgaps = true, -- fills gap for missing accounts
-        advertise = "/polarsblade", -- advertise message
-        cdropcovertax = true, -- cover tax for cdrop
-        responses = { -- responses for commands
-            toggle = true, -- toggle
-            ["random"] = "randomize complete",
-            ["fps"] = "fps set",
-            ["redeemcode"] = "code redeemed",
-            ["drop"] = {
-                "drop enabled", -- drop when toggled on
-                "drop disabled" -- drop when toggled off
-            },
-            ["wallet"] = {
-                "wallet equipped", -- wallets when equipped
-                "wallet unequipped" -- wallets when unequipped
-            },
-            ["setup"] = "setup complete",
-            ["circle"] = "circle formation complete",
-            ["setposition"] = "position set",
-            ["cdrop"] = {
-                "dropping amount", -- cdrop when enabled
-                "ended drop", -- cdrop when disabled
-            },
-            ["line"] = "lined up",
-            ["unarrest"] = "unarrested",
-            ["block"] = "blocking",
-            ["unblock"] = "unblocking",
-        }
-    }
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b50c882012e456f4c3a7216111d2f05d.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bcb77d30c12bec835df51138c5700331.lua"))()
