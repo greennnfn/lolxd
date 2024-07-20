@@ -1,5 +1,3 @@
-script_key="cimMBbkZHOOpcWetoKFZbFJbNCIYVFPH"
-
 _G.configuration = {
     behavior = {
         fps = 8, -- frame limit (lower results in less cpu usage but can affect cash being made)
@@ -44,9 +42,9 @@ _G.configuration = {
         },
     },
     webhook = {
-        link = "https://discord.com/api/webhooks/1261529828432023593/X5QTMxi5IxwNgsGSA1pY8n8nQQe6jptts7VWryVuybPfWSDeXOtN_bR-KrLXQ3ypCKAw", -- webhook link
+        link = "https://discord.com/api/webhooks/1264011468572200970/sgDkE4WC9zNj2Tn65eK9h4uAWyLJXBt4ze2Xki_PFlyjZmPBBPJbfEsyEur6cnb5yznU", -- webhook link
         interval = 60, -- sends webhook after (seconds) passes
     },
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9c53b857c733320e64332c171f813e50.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/74e3b194eb560d1324b8b6df78755b5e.lua"))()
