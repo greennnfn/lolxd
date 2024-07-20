@@ -1,5 +1,5 @@
 _G.configuration = {
-    host = { TR4PPTR4Y
+    host = { "TR4PPTR4Y"
 
     },
     prefix = "/", -- prefix for commands
