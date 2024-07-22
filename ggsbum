@@ -42,7 +42,7 @@ _G.configuration = {
         },
     },
     webhook = {
-        link = "https://discord.com/api/webhooks/1264011468572200970/sgDkE4WC9zNj2Tn65eK9h4uAWyLJXBt4ze2Xki_PFlyjZmPBBPJbfEsyEur6cnb5yznU", -- webhook link
+        link = "https://discord.com/api/webhooks/1264904168100073566/jvcl2g79Dh56JOkg7NWYy_JKmvt8Kk8TqpZRs9hG0stpRDKR-9SYPv5A7dOkJH8jq64k", -- webhook link
         interval = 3600, -- sends webhook after (seconds) passes
     },
 }
