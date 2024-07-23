@@ -1,50 +1,12 @@
-_G.configuration = {
-    behavior = {
-        fps = 8, -- frame limit (lower results in less cpu usage but can affect cash being made)
-        rendering = true, -- disables / enables rendering (true by default because of memory leaks)
-        optimize = true, -- helps lower usage overall
-        gui = true, -- cool gui with stats
-    },
-    cash = {
-        pickup = 0.7, -- pickup delay
-        distancepickup = 0.25, -- pickup delay + this when cash is too far (prevents kicking)
-    },
-    farming = {
-        shoe = false, -- farms shoes
-        hospital = false, -- farms hospital
-        spawnedcash = {
-            toggle = false, -- farms dropped cash / spawned cash
-            tweenspeed = 1, -- speed of teleport
-            finishdelay = 1, -- speed of pickup
-        },
-    },
-    weapon = {
-        defaultmoveset = false, -- farms using default moveset
-        boxingmoveset = true, -- farms using boxing moveset (farms boxing if it doesnt already have it)
-    },
-    other = {
-        mask = true, -- automatically masks the account
-        unjail = true, -- automatically unjails the account
-    },
-    serverhop = {
-        switch = false, -- force toggle for serverhopping
-        cashthreshold = 100000, -- cash threshold (serverhops if it doesnt reach this within a hour of farming) || set to false if you want this disabled
-        onnoatms = false, -- leaves when there are no more atms to farm (shoe and hospital become ineffective)
-        onknocked = false, -- leaves if the account gets knocked
-        leaveinterval = 99999, -- leaves after (seconds) (leave on 0 if you want it to be disabled)
-        onjoined = false, -- leaves if a player with the same id in joinedids joins
-        joinedids = {
-
-        },
-        onloaded = false, -- leaves if a account with the same id in loadedids is already in the server
-        loadedids = {
-
-        },
-    },
+script_key="tahFfjodKztRjfjffMfZtMVBjaFkxcFR";
+getgenv().config = {
+    mode = 1, -- 1 is super punch / box, 2 is normal punch
+    fps = 30,
+    checkPlayersNearby = false,
+    gui = true, -- will display gui with earned cash
     webhook = {
-        link = "https://discord.com/api/webhooks/1264904168100073566/jvcl2g79Dh56JOkg7NWYy_JKmvt8Kk8TqpZRs9hG0stpRDKR-9SYPv5A7dOkJH8jq64k", -- webhook link
-        interval = 3600, -- sends webhook after (seconds) passes
+        url = "https://discord.com/api/webhooks/1265267173375479890/4mH7g35VBOQk6lTiT1p26HXi3Ax-X_C-LSZgFO4m2f_LMdzvHLYVQEVIOicaBkGrIhD3", -- webhookurl
+        delay = "30m", -- every 30 minutes
     },
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/74e3b194eb560d1324b8b6df78755b5e.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bcb77d30c12bec835df51138c5700331.lua"))()
