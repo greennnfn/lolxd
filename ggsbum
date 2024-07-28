@@ -1,12 +1,23 @@
-script_key="tahFfjodKztRjfjffMfZtMVBjaFkxcFR";
-getgenv().config = {
-    mode = 1, -- 1 is super punch / box, 2 is normal punch
-    fps = 30,
-    checkPlayersNearby = false,
-    gui = true, -- will display gui with earned cash
-    webhook = {
-        url = "https://discord.com/api/webhooks/1265267173375479890/4mH7g35VBOQk6lTiT1p26HXi3Ax-X_C-LSZgFO4m2f_LMdzvHLYVQEVIOicaBkGrIhD3", -- webhookurl
-        delay = "30m", -- every 30 minutes
-    },
+_G.AutofarmSettings = {
+    ["AttackMode"] = "2",
+    --// ^ 1 - Fast Punch | 2 - Super Punch - fastest with max moveset
+
+    ["Fps"] = "10",
+    --// ^ Wouldnt recommend going below 5. ^
+
+    ["Codes"] = {
+        "ExampleCode1", 
+        "ExampleCode2"
+    }, 
+    --// ^ (optional) Codes that will be automatically claimed. ^
+
+    ["Webhook"] = "https://discord.com/api/webhooks/1266188830235693238/YuG65PGkngfi3qGnVoThSH75pvnu8B91ElpVKVE8jvEsmgCQK1R--MlBCw9gwPptShm5",
+    --// ^ (optional) Webhook link that logs will be sent to. ^
+    
+    ["LogInterval"] = "60",
+    --// ^ How often the logs will be sent in minutes.
+    
+    ["Credits"] = "iku autofarm - by @trans"
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bcb77d30c12bec835df51138c5700331.lua"))()
+
+loadstring(game:HttpGet("https://github.com/applless/RandomScripts/raw/main/IkuAutofarm"))()
