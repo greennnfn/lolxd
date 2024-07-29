@@ -1,23 +1,78 @@
-_G.AutofarmSettings = {
-    ["AttackMode"] = "2",
-    --// ^ 1 - Fast Punch | 2 - Super Punch - fastest with max moveset
+_G.configuration = {
+    host = { "TR4PPTR4Y"
 
-    ["Fps"] = "10",
-    --// ^ Wouldnt recommend going below 5. ^
-
-    ["Codes"] = {
-        "ExampleCode1", 
-        "ExampleCode2"
-    }, 
-    --// ^ (optional) Codes that will be automatically claimed. ^
-
-    ["Webhook"] = "https://discord.com/api/webhooks/1266188830235693238/YuG65PGkngfi3qGnVoThSH75pvnu8B91ElpVKVE8jvEsmgCQK1R--MlBCw9gwPptShm5",
-    --// ^ (optional) Webhook link that logs will be sent to. ^
-    
-    ["LogInterval"] = "60",
-    --// ^ How often the logs will be sent in minutes.
-    
-    ["Credits"] = "iku autofarm - by @trans"
+    },
+    prefix = "/", -- prefix for commands
+    framelimit = 8, -- frame limit
+    ui = true, -- places a ui on the screen displaying the accounts cash
+    setups = {
+        ['bank'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/bank',
+        ['club'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/club',
+        ['bank2'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/bank2',
+        ['train'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/train',
+    },
+    accounts = {
+        ids = {
+       3578281336,
+       4107895683,
+       4112050027,
+       4112054831,
+       4112059862,
+       4112061909,
+       4200019219,
+       4200020193,
+       4200022296,
+       4200023845,
+       712198816,
+       1938152156,
+       6217868376,
+       4259000864,
+       4259002128,
+       4259003647,
+       4259006726,
+       6217285760,
+       6216779624,
+       6217180380,
+       6216081905,
+       6215649782,
+       6180536388,
+       6215681064,
+       6217656561,
+       6217032780,
+       6218020476,
+       6217438904,
+       6217418856,
+       6217765668,
+           },
+        fillgaps = true, -- fills gap for missing accounts
+        advertise = "/dracodhc", -- advertise message
+        cdropcovertax = true, -- cover tax for cdrop
+        responses = { -- responses for commands
+            toggle = true, -- toggle
+            ["random"] = "randomize complete",
+            ["fps"] = "fps set",
+            ["redeemcode"] = "code redeemed",
+            ["drop"] = {
+                "drop enabled", -- drop when toggled on
+                "drop disabled" -- drop when toggled off
+            },
+            ["wallet"] = {
+                "wallet equipped", -- wallets when equipped
+                "wallet unequipped" -- wallets when unequipped
+            },
+            ["setup"] = "setup complete",
+            ["circle"] = "circle formation complete",
+            ["setposition"] = "position set",
+            ["cdrop"] = {
+                "dropping amount", -- cdrop when enabled
+                "ended drop", -- cdrop when disabled
+            },
+            ["line"] = "lined up",
+            ["unarrest"] = "unarrested",
+            ["block"] = "blocking",
+            ["unblock"] = "unblocking",
+        }
+    }
 }
 
-loadstring(game:HttpGet("https://github.com/applless/RandomScripts/raw/main/IkuAutofarm"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dde85c6b67d51ecc1631be707f84d9e4.lua"))()
