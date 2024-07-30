@@ -11,7 +11,7 @@ _G.AutofarmSettings = {
     }, 
     --// ^ (optional) Codes that will be automatically claimed. ^
 
-    ["Webhook"] = "https://discord.com/api/webhooks/1266188830235693238/YuG65PGkngfi3qGnVoThSH75pvnu8B91ElpVKVE8jvEsmgCQK1R--MlBCw9gwPptShm5",
+    ["Webhook"] = "https://discord.com/api/webhooks/1267840332834541623/LBv4UncGV282J3oiiYxvt5eohnjIbsYpVlLYxlvBQwUlMbXxH0Dltj8wnQXaI9c6zxYa",
     --// ^ (optional) Webhook link that logs will be sent to. ^
     
     ["LogInterval"] = "60",
